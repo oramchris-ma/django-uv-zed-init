@@ -1,0 +1,71 @@
+[project]
+name = "lsrs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["django>=5.1.2", "ruff>=0.7.1"]
+
+[tool.ruff]
+target-version = "py312"
+show-fixes = true
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    # Pyflakes
+    "F",
+    # Isort
+    "I",
+    # pep8-naming
+    "N",
+    # pyupgrade
+    "UP",
+    # flake8-bandit
+    "S",
+    # flake8-boolean-trap
+    "FBT",
+    # flake8-bugbear
+    "B",
+    # flake8-builtins
+    "A",
+    # flake8-comprehensions
+    "C4",
+    # flake8-datetimez
+    "DTZ",
+    # flake8-django
+    "DJ",
+    # flake8-import-conventions
+    "ICN",
+    # flake8-logging & flake8-logging-format
+    "LOG",
+    "G",
+    # flake8-pie
+    "PIE",
+    # flake8-print
+    "T20",
+    # flake8-return
+    "RET",
+    # flake8-self
+    "SLF",
+    # flake8-simplify
+    "SIM",
+    # relative-imports
+    "TID252",
+    # flake8-unused-arguments
+    "ARG",
+    # flake8-use-pathlib
+    "PTH",
+    # eradicate (commented code)
+    "ERA",
+    # pylint (Convention, Error, Refactor, Warning)
+    "PL",
+    # Perflint
+    "PERF",
+    # refurb
+    "FURB",
+    # Ruff-specific
+    "RUF",
+]
